@@ -7,8 +7,6 @@ This project investigates how the proportion of personal income that parents con
 
 This was completed as an undergraduate dissertation at City, St George's, University of London (BSc Criminology with Data Analytics, First-Class Honours) and scored 75%. The analysis was conducted in SPSS, with full syntax provided for reproducibility.
 
-> **Note:** A Python recreation of this analysis is planned for the future.
-
 ---
 
 ## Research Questions
