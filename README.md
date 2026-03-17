@@ -109,6 +109,7 @@ uk-household-income-satisfaction-analysis/
 │       ├── contribution_by_satisfaction.png
 │       ├── health_by_satisfaction.png
 │       ├── job_status_by_satisfaction.png
+│       ├── Logistic-Regression-Graph.png
 │       └── regression_summary.png
 │
 ├── docs/
