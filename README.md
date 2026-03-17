@@ -172,4 +172,4 @@ Key academic references underpinning this analysis:
 **Evangelos Pourikas**
 - MSc Applied Social Data Science, London School of Economics (2025-2026)
 - BSc Criminology with Data Analytics, City, St George's, University of London (First-Class Honours)
-- [LinkedIn](https://www.linkedin.com/in/evangelos-pourikas18056b2a0/)
+- [LinkedIn](https://www.linkedin.com/in/evangelos-pourikas-18056b2a0/)
