@@ -156,14 +156,6 @@ uk-household-income-satisfaction-analysis/
 
 ---
 
-## Future Plans
-
-- [ ] Recreate the full analysis in Python (pandas, scipy, statsmodels, seaborn)
-- [ ] Add interactive visualisations
-- [ ] Extend to longitudinal analysis across multiple waves
-
----
-
 ## References
 
 Key academic references underpinning this analysis:
