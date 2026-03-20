@@ -5,7 +5,7 @@
 
 This project investigates how the proportion of personal income that parents contribute to their total household income affects their satisfaction with it — focusing specifically on UK couple households with children under the age of 16. The analysis uses Wave 14 (2023/2024) of the Understanding Society dataset and applies bivariate testing and logistic regression to examine this under-researched relationship in the UK context.
 
-This was completed as an undergraduate dissertation at City, St George's, University of London (BSc Criminology with Data Analytics, First-Class Honours) and scored 75%. The analysis was conducted in SPSS, with full syntax provided for reproducibility.
+This was completed as an undergraduate dissertation at City, St George's, University of London (BSc Criminology with Data Analytics, First-Class Honours) and scored 75%. The analysis was originally conducted in SPSS and has since been recreated in Python (Jupyter Notebook) for reproducibility and portfolio purposes. Both versions are included in this repository.
 
 ---
 
@@ -97,20 +97,25 @@ uk-household-income-satisfaction-analysis/
 ├── README.md
 ├── LICENSE
 │
+├── notebooks/
+│   └── full_analysis.ipynb        # Complete Python analysis with explanations
+│
 ├── syntax/
 │   ├── 01_data_preparation.sps        # Merging files, filtering, missing values
 │   ├── 02_variable_recoding.sps       # Computing contribution %, recoding variables
 │   ├── 03_bivariate_analysis.sps      # Chi-square tests, correlations, crosstabs
 │   ├── 04_logistic_regression.sps     # Logistic regression model
-│   └── full_syntax.sps                # Complete syntax in one file
+│   └── full_syntax.sps                # Complete SPSS syntax in one file
 │
 ├── outputs/
 │   └── figures/
-│       ├── contribution_by_satisfaction.png
-│       ├── health_by_satisfaction.png
-│       ├── job_status_by_satisfaction.png
-│       ├── Logistic-Regression-Graph.png
-│       └── regression_summary.png
+│       ├── contribution_by_satisfaction.png          (SPSS)
+│       ├── health_by_satisfaction.png                (SPSS)
+│       ├── job_status_by_satisfaction.png            (SPSS)
+│       ├── regression_summary.png                    (SPSS)
+│       ├── pct_contributed_cat_by_satisfaction.png   (Python)
+│       ├── general_health_by_satisfaction.png        (Python)
+│       └── job_status_by_satisfaction_python.png     (Python)
 │
 ├── docs/
 │   ├── variable_codebook.md           # Detailed variable descriptions and coding decisions
@@ -128,12 +133,20 @@ uk-household-income-satisfaction-analysis/
 - Download Understanding Society Wave 14: SN 6614
 - Place `n_indresp.sav` and `n_hhresp.sav` in a local folder on your machine
 
-### 2. Update File Paths
-- Open the syntax files in `syntax/` and update the file paths to match your local data location
-- The original paths reference macOS directories — adjust these to your own setup
+### 2. Install Dependencies (Python version)
+```bash
+pip install pandas numpy pyreadstat scipy statsmodels matplotlib seaborn jupyter
+```
 
-### 3. Run in SPSS
+### 3. Run the Analysis
+**Option A — Python (Jupyter Notebook):**
+```bash
+jupyter notebook notebooks/full_analysis.ipynb
+```
+
+**Option B — SPSS:**
 - Open IBM SPSS Statistics (version 28 or later recommended)
+- Update file paths in the syntax files to match your local data location
 - Run `full_syntax.sps` to execute the entire analysis end-to-end
 - Alternatively, run each numbered syntax file in order (01 → 04)
 
@@ -141,7 +154,8 @@ uk-household-income-satisfaction-analysis/
 
 ## Tools Used
 
-- **IBM SPSS Statistics 28** — All data preparation, analysis, and visualisation
+- **IBM SPSS Statistics 28** — Original analysis: data preparation, bivariate testing, logistic regression, and visualisation
+- **Python** — Recreated analysis: pandas, NumPy, SciPy, statsmodels, matplotlib, seaborn, pyreadstat
 - **Understanding Society (Wave 14)** — UK Household Longitudinal Study, 2023/2024
 
 ---
@@ -173,4 +187,4 @@ Key academic references underpinning this analysis:
 **Evangelos Pourikas**
 - MSc Applied Social Data Science, London School of Economics (2025-2026)
 - BSc Criminology with Data Analytics, City, St George's, University of London (First-Class Honours)
-- [LinkedIn](https://www.linkedin.com/in/evangelos-pourikas/)
+- [LinkedIn](https://www.linkedin.com/in/evangelos-pourikas18056b2a0/)
